@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmersiveAnalytics_Project1-master", "ImmersiveAnalytics_Project1-master.csproj", "{A0DCC9DA-BDDD-77A4-C055-C8EDE6198375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmersiveAnalytics_Project1-master.Editor", "ImmersiveAnalytics_Project1-master.Editor.csproj", "{25B95A77-4739-CA99-9C79-E9BE280E5A1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0DCC9DA-BDDD-77A4-C055-C8EDE6198375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DCC9DA-BDDD-77A4-C055-C8EDE6198375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DCC9DA-BDDD-77A4-C055-C8EDE6198375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DCC9DA-BDDD-77A4-C055-C8EDE6198375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B95A77-4739-CA99-9C79-E9BE280E5A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B95A77-4739-CA99-9C79-E9BE280E5A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B95A77-4739-CA99-9C79-E9BE280E5A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B95A77-4739-CA99-9C79-E9BE280E5A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
