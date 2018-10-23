@@ -6,11 +6,17 @@ using System;
 using System.Collections;
 using System.Xml;
 using System.IO;
+//using System.Collections.Generic; 
+
 namespace Visualization{
 public class LoadData : MonoBehaviour
 {
+    public Material[] material; 
+    public MeshRenderer nodeColor;
+
     public Node DataPoint; //DataPoint: prefab to be used when creating nodes
     public Link linkPrefab; //linkPrefab: prefab to be used when creating links
+     
     //public TextMesh nodeText; 
 
     //public GameObject DataPoint; 
@@ -18,6 +24,7 @@ public class LoadData : MonoBehaviour
 
     private Hashtable nodetable; //holds live instances of the prefab for nodes
     private Hashtable linktable; //hold live instance of the prefab for links
+    public Hashtable colors; 
     //private GUIText statusText;
     private int nodeCount = 0; //holds the numeric value for the count of nodes
     private int linkCount = 0; //holds the numeric value for the count of links
@@ -47,6 +54,9 @@ public class LoadData : MonoBehaviour
 
           nodetable = new Hashtable();
           linktable = new Hashtable(); 
+          //nodeColor = GetComponent<MeshRenderer>(); 
+          //Debug.Log("Material:" + material[0]); 
+          //nodeColor.sharedMaterial = material[0];   
           StartCoroutine(LoadLayout()); 
 
     }
@@ -97,13 +107,15 @@ public class LoadData : MonoBehaviour
                     Node nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity) as Node;
                     //NodeText.GetComponent<TextMesh>().text = xmlNode.Attributes["name"].Value; 
                     //nodeText.text = xmlNode.Attributes["name"].Value; 
-                    nodeObject.nodeText.text = xmlNode.Attributes["name"].Value; 
+                    nodeObject.nodeText.text = xmlNode.Attributes["name"].Value;
+                    nodeObject.colorOfNode.color = Color.red;  
+                    //nodeColor.sharedMaterial = material[0];  
+                    //nodeObject.nodeColor.material.SetColor("_Color", Color.red); 
+                    //nodeObject.nodeColor.color = colors[xmlNode.Attributes["color"].Value]; 
                     //GameObject nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity); 
-                    //nodeObject.nodeText.text
                     //nodeObject.id = xmlNode.Attributes[0].Value;
                     nodeObject.id = xmlNode.Attributes["id"].Value; 
                     nodeObject.name = xmlNode.Attributes["id"].Value; 
-                    //nodetable.Add(nodeObject.id, nodeObject);
                     nodetable.Add(nodeObject.id, nodeObject); 
                     //statusText.text = "Loading Node" + nodeObject.id;
                     nodeCount++;

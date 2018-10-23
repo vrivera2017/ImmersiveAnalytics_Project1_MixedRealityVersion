@@ -6,6 +6,7 @@ public class Node : MonoBehaviour {
 
     public string id;
     public TextMesh nodeText;
+    public Material colorOfNode; 
 	
 	// Update is called once per frame
 	void Update () {
