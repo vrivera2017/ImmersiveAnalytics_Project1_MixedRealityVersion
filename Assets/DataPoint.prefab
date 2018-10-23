@@ -156,7 +156,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288334252896622}
-  m_Text: Hello
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 
-  nodeText: {fileID: 102522131594690862, guid: df665a22f182ba646b6a57dc584ae04c, type: 2}
+  nodeText: {fileID: 102391204619811906}
 --- !u!135 &135089288083433226
 SphereCollider:
   m_ObjectHideFlags: 1

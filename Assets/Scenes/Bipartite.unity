@@ -156,22 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 3
-  UseUnscaledTime: 1
-  axisType: 0
-  buttonType: 21
-  InputManagerHorizontalAxisName: CONTROLLER_LEFT_STICK_HORIZONTAL
-  InputManagerVerticalAxisName: CONTROLLER_LEFT_STICK_VERTICAL
-  Axis0Destination: 2
-  Axis1Destination: 0
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +252,7 @@ MonoBehaviour:
     type: 2}
   linkPrefab: {fileID: 114428470161063300, guid: 82112e24abae97144ac73f096fa65d03,
     type: 2}
+  nodeText: {fileID: 102391204619811906, guid: 08c9d170559381a46bed10b91b6d82ba, type: 2}
 --- !u!4 &267037785
 Transform:
   m_ObjectHideFlags: 0
@@ -324,10 +309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32459554324257a45847eb358b2849a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloorQuad: {fileID: 1520281459093612, guid: 08d25ccfbbc595b4a820c7edd551d095, type: 2}
-  floorQuadInstance: {fileID: 0}
-  renderFloor: 1
-  renderBoundary: 1
 --- !u!1 &443468483
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,22 +352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 1
-  UseUnscaledTime: 1
-  axisType: 3
-  buttonType: 21
-  InputManagerHorizontalAxisName: 
-  InputManagerVerticalAxisName: 
-  Axis0Destination: 2
-  Axis1Destination: 6
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,22 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 3
-  UseUnscaledTime: 1
-  axisType: 0
-  buttonType: 21
-  InputManagerHorizontalAxisName: CONTROLLER_LEFT_TRIGGER
-  InputManagerVerticalAxisName: CONTROLLER_RIGHT_TRIGGER
-  Axis0Destination: 2
-  Axis1Destination: 3
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &810401879
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,22 +510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 3
-  UseUnscaledTime: 1
-  axisType: 12
-  buttonType: 3
-  InputManagerHorizontalAxisName: 
-  InputManagerVerticalAxisName: 
-  Axis0Destination: 4
-  Axis1Destination: 6
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &820539641
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,22 +553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 3
-  UseUnscaledTime: 1
-  axisType: 0
-  buttonType: 21
-  InputManagerHorizontalAxisName: CONTROLLER_RIGHT_STICK_HORIZONTAL
-  InputManagerVerticalAxisName: CONTROLLER_RIGHT_STICK_VERTICAL
-  Axis0Destination: 0
-  Axis1Destination: 4
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1001 &844786890
 Prefab:
   m_ObjectHideFlags: 0
@@ -789,22 +706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 4.5
-  UseUnscaledTime: 1
-  axisType: 11
-  buttonType: 1
-  InputManagerHorizontalAxisName: 
-  InputManagerVerticalAxisName: 
-  Axis0Destination: 0
-  Axis1Destination: 2
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &957756295
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,23 +755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09147e2b1429c9428010f6aa89f91c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NearClipPlane_OpaqueDisplay: 0.1
-  CameraClearFlags_OpaqueDisplay: 2
-  BackgroundColor_OpaqueDisplay:
-    r: 0.875
-    g: 0.5275735
-    b: 0.5275735
-    a: 1
-  OpaqueQualityLevel: 5
-  NearClipPlane_TransparentDisplay: 0.85
-  CameraClearFlags_TransparentDisplay: 2
-  BackgroundColor_TransparentDisplay:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  HoloLensQualityLevel: 0
-  <CurrentDisplayType>k__BackingField: 0
 --- !u!114 &957756298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,22 +767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf6ab24363b7a74da25766ea8ba6809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSupported: 1
-  MouseXYRotationAxisControl: {fileID: 887515827}
-  MouseXYTranslationAxisControl: {fileID: 1553542225}
-  MouseXZTranslationAxisControl: {fileID: 810401881}
-  KeyboardSupported: 1
-  KeyboardXYRotationAxisControl: {fileID: 1237540389}
-  KeyboardXZRotationAxisControl: {fileID: 2130899625}
-  KeyboardXYTranslationAxisControl: {fileID: 443468485}
-  KeyboardXZTranslationAxisControl: {fileID: 1777471678}
-  JoystickSupported: 0
-  JoystickXYRotationAxisControl: {fileID: 81151010}
-  JoystickXYTranslationAxisControl: {fileID: 786004493}
-  JoystickXZTranslationAxisControl: {fileID: 820539643}
-  lastTrackerToUnityTranslation: {x: 0, y: 0, z: 0}
-  lastTrackerToUnityRotation: {x: 0, y: 0, z: 0, w: 1}
-  cameraTransform: {fileID: 0}
 --- !u!81 &957756299
 AudioListener:
   m_ObjectHideFlags: 0
@@ -994,16 +862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03314f8008ae1ed4fbd45c95a7ed5182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnimateControllerModel: 1
-  AlwaysUseAlternateLeftModel: 0
-  AlwaysUseAlternateRightModel: 0
-  AlternateLeftController: {fileID: 1097318689274706, guid: 869d340c69dbcef459070c1a159d38ac,
-    type: 2}
-  AlternateRightController: {fileID: 1097318689274706, guid: 869d340c69dbcef459070c1a159d38ac,
-    type: 2}
-  TouchpadTouchedOverride: {fileID: 0}
-  GLTFMaterial: {fileID: 2100000, guid: 2ac78523d661e954c83d799f582b22e8, type: 2}
-  loadingControllers: []
 --- !u!1 &1130747275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,17 +907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794a5a07720daf4479efca14d8ba4297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeSharedMaterial: 0
-  fadeMaterial: {fileID: 0}
-  fadeColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  currentState: 0
-  startTime: 0
-  fadeOutTime: 0
-  fadeInTime: 0
 --- !u!23 &1130747278
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1146,22 +993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 1
-  UseUnscaledTime: 1
-  axisType: 6
-  buttonType: 21
-  InputManagerHorizontalAxisName: 
-  InputManagerVerticalAxisName: 
-  Axis0Destination: 2
-  Axis1Destination: 1
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &1453632349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,26 +1023,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc175d33f66e6647aabac1b65e7e632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HorizontalStrafe: 1
-  ForwardMovement: 2
-  HorizontalRotation: 3
-  VerticalRotation: 4
-  LeftThumbstickX: CONTROLLER_LEFT_STICK_HORIZONTAL
-  LeftThumbstickY: CONTROLLER_LEFT_STICK_VERTICAL
-  RightThumbstickX: CONTROLLER_RIGHT_STICK_HORIZONTAL
-  RightThumbstickY: CONTROLLER_RIGHT_STICK_VERTICAL
-  EnableTeleport: 1
-  EnableRotation: 1
-  EnableStrafe: 1
-  RotationSize: 45
-  StrafeAmount: 0.5
-  teleportMarker: {fileID: 1503526479864244, guid: 10d95b99055c6ad40b735cc8b3593745,
-    type: 2}
-  animationController: {fileID: 0}
-  useCustomMapping: 0
-  fadeControl: {fileID: 0}
-  isTeleportValid: 0
-  currentSourceId: 0
 --- !u!114 &1453632351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,22 +1095,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 1
-  UseUnscaledTime: 1
-  axisType: 13
-  buttonType: 21
-  InputManagerHorizontalAxisName: 
-  InputManagerVerticalAxisName: 
-  Axis0Destination: 0
-  Axis1Destination: 2
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &1728518216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,22 +1178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 3
-  UseUnscaledTime: 1
-  axisType: 0
-  buttonType: 21
-  InputManagerHorizontalAxisName: Horizontal
-  InputManagerVerticalAxisName: Vertical
-  Axis0Destination: 0
-  Axis1Destination: 4
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0
 --- !u!1 &2130899623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,19 +1221,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b627838df61e64baecc87fee2dec17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SensitivityScale: 1
-  UseUnscaledTime: 1
-  axisType: 7
-  buttonType: 21
-  InputManagerHorizontalAxisName: 
-  InputManagerVerticalAxisName: 
-  Axis0Destination: 5
-  Axis1Destination: 4
-  Axis2Destination: 6
-  lastMousePosition: {x: 0, y: 0, z: 0}
-  isMouseJumping: 0
-  appHasFocus: 1
-  usingMouse: 0
-  inputManagerAxesNeedApproval: 1
-  inputManagerHorizontalAxisApproved: 0
-  inputManagerVerticalAxisApproved: 0

@@ -11,6 +11,7 @@ public class LoadData : MonoBehaviour
 {
     public Node DataPoint; //DataPoint: prefab to be used when creating nodes
     public Link linkPrefab; //linkPrefab: prefab to be used when creating links
+    //public TextMesh nodeText; 
 
     //public GameObject DataPoint; 
     //public GameObject linkPrefab; 
@@ -94,6 +95,9 @@ public class LoadData : MonoBehaviour
                     float z = float.Parse(xmlNode.Attributes["z"].Value);
                     Debug.Log("z: " + z); 
                     Node nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity) as Node;
+                    //NodeText.GetComponent<TextMesh>().text = xmlNode.Attributes["name"].Value; 
+                    //nodeText.text = xmlNode.Attributes["name"].Value; 
+                    nodeObject.nodeText.text = xmlNode.Attributes["name"].Value; 
                     //GameObject nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity); 
                     //nodeObject.nodeText.text
                     //nodeObject.id = xmlNode.Attributes[0].Value;
