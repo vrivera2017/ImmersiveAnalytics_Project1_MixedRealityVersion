@@ -11,20 +11,20 @@ using System.IO;
 namespace Visualization{
 public class LoadData : MonoBehaviour
 {
-    public Material[] material; 
-    public MeshRenderer nodeColor;
+    //Color[] colors; 
+    //Renderer renderer; 
+    //public MeshRenderer nodeColor;
+    //private MeshRenderer rend;  
+    public Material NodeColor; 
+    public Material NodeColor2;
+    public Material NodeColor3; 
 
     public Node DataPoint; //DataPoint: prefab to be used when creating nodes
     public Link linkPrefab; //linkPrefab: prefab to be used when creating links
-     
-    //public TextMesh nodeText; 
-
-    //public GameObject DataPoint; 
-    //public GameObject linkPrefab; 
 
     private Hashtable nodetable; //holds live instances of the prefab for nodes
     private Hashtable linktable; //hold live instance of the prefab for links
-    public Hashtable colors; 
+   
     //private GUIText statusText;
     private int nodeCount = 0; //holds the numeric value for the count of nodes
     private int linkCount = 0; //holds the numeric value for the count of links
@@ -53,10 +53,14 @@ public class LoadData : MonoBehaviour
     {
 
           nodetable = new Hashtable();
-          linktable = new Hashtable(); 
-          //nodeColor = GetComponent<MeshRenderer>(); 
-          //Debug.Log("Material:" + material[0]); 
-          //nodeColor.sharedMaterial = material[0];   
+          linktable = new Hashtable();
+          //nodeColor = GetComponent<MeshRenderer>();
+          //colors = new Color[3];
+          //colors[0] = Color.cyan;
+          //colors[1] = Color.green;
+          //colors[2] = Color.red;   
+
+          //Debug.Log("Material Array: " + material);   
           StartCoroutine(LoadLayout()); 
 
     }
@@ -108,12 +112,42 @@ public class LoadData : MonoBehaviour
                     //NodeText.GetComponent<TextMesh>().text = xmlNode.Attributes["name"].Value; 
                     //nodeText.text = xmlNode.Attributes["name"].Value; 
                     nodeObject.nodeText.text = xmlNode.Attributes["name"].Value;
-                    nodeObject.colorOfNode.color = Color.red;  
+                    
+                    //nodeObject.colorOfNode = NodeColor2; 
+
+                    //nodeColor.material.color = colors[1]; 
+
+                    //nodeObject.nodeColor.material = nodeObject.colorOfNode; 
+                   
+                   
+                    //THIS WAS FOR CHANGING COLOR OF NODE
+                    
+                    if(xmlNode.Attributes["category"].Value == "ingredient"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.red;
+                        
+                    }
+                    else if(xmlNode.Attributes["category"].Value == "bakedgood_type"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.blue; 
+                        
+                    }
+                    else if(xmlNode.Attributes["category"].Value == "type"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.green; 
+                       
+                    }
+                    
+
+                    //WORKING: nodeObject.colorOfNode.color = new Color32(255, 0, 0, 255); 
+
+                    
+
                     //nodeColor.sharedMaterial = material[0];  
                     //nodeObject.nodeColor.material.SetColor("_Color", Color.red); 
                     //nodeObject.nodeColor.color = colors[xmlNode.Attributes["color"].Value]; 
                     //GameObject nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity); 
                     //nodeObject.id = xmlNode.Attributes[0].Value;
+
+                    
+
                     nodeObject.id = xmlNode.Attributes["id"].Value; 
                     nodeObject.name = xmlNode.Attributes["id"].Value; 
                     nodetable.Add(nodeObject.id, nodeObject); 
@@ -121,6 +155,7 @@ public class LoadData : MonoBehaviour
                     nodeCount++;
                     //nodeCountText.text = "Nodes: " + nodeCount; 
                 }
+
                 // Create edges
                 /*
                 if(xmlNode.Name == "edge")

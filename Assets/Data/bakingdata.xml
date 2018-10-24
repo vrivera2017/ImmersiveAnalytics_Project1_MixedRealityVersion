@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/1.0/ygraphml.xsd" xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/1.0/xaml">
 <graph id="G" edgedefault="undirected">
-<node id= "flour_node" x = "-2" y = "0" z = "0" name = "flour" directed = "false" color = "blue" />
-<node id = "egg_node" x = "-1" y = "1" z = "0" name = "eggs" directed = "false" color = "white" />
-<node id = "cchipcookie_node" x = "2" y = "2" z = "0" name = "chocolate chip cookie" directed = "false" color = "red" />
-<node id = "cookies_node" x = "1" y = "1" z = "1" name = "Cookies" directed = "false" color = "green" />
+<node id= "flour_node" x = "-2" y = "0" z = "0" name = "flour" directed = "false" category = "ingredient" />
+<node id = "egg_node" x = "-1" y = "1" z = "0" name = "eggs" directed = "false" category = "ingredient" />
+<node id = "cchipcookie_node" x = "2" y = "2" z = "0" name = "chocolate chip cookie" directed = "false" category = "type" />
+<node id = "cookies_node" x = "1" y = "1" z = "1" name = "Cookies" directed = "false" category = "bakedgood_type" />
 <edge id = "link_1" source = "flour_node" target = "cchipcookie_node" />
 <edge id = "link_2" source = "cchipcookie_node" target = "cookies_node" /> 
 <edge id = "link_3" source = "egg_node" target = "cchipcookie_node" />

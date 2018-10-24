@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 
   nodeText: {fileID: 102391204619811906}
+  colorOfNode: {fileID: 2100000, guid: 4ca3149123d184d9db3b9b05c59fd2e1, type: 2}
 --- !u!135 &135089288083433226
 SphereCollider:
   m_ObjectHideFlags: 1

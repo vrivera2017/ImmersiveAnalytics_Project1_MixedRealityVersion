@@ -252,7 +252,6 @@ MonoBehaviour:
     type: 2}
   linkPrefab: {fileID: 114428470161063300, guid: 82112e24abae97144ac73f096fa65d03,
     type: 2}
-  nodeText: {fileID: 102391204619811906, guid: 08c9d170559381a46bed10b91b6d82ba, type: 2}
 --- !u!4 &267037785
 Transform:
   m_ObjectHideFlags: 0
