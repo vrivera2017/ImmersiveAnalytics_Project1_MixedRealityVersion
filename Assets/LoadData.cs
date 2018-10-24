@@ -14,10 +14,7 @@ public class LoadData : MonoBehaviour
     //Color[] colors; 
     //Renderer renderer; 
     //public MeshRenderer nodeColor;
-    //private MeshRenderer rend;  
-    public Material NodeColor; 
-    public Material NodeColor2;
-    public Material NodeColor3; 
+    //private MeshRenderer rend;   
 
     public Node DataPoint; //DataPoint: prefab to be used when creating nodes
     public Link linkPrefab; //linkPrefab: prefab to be used when creating links
@@ -54,13 +51,7 @@ public class LoadData : MonoBehaviour
 
           nodetable = new Hashtable();
           linktable = new Hashtable();
-          //nodeColor = GetComponent<MeshRenderer>();
-          //colors = new Color[3];
-          //colors[0] = Color.cyan;
-          //colors[1] = Color.green;
-          //colors[2] = Color.red;   
-
-          //Debug.Log("Material Array: " + material);   
+          
           StartCoroutine(LoadLayout()); 
 
     }
@@ -123,15 +114,15 @@ public class LoadData : MonoBehaviour
                     //THIS WAS FOR CHANGING COLOR OF NODE
                     
                     if(xmlNode.Attributes["category"].Value == "ingredient"){
-                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.red;
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(66, 232, 244, 255);
                         
                     }
-                    else if(xmlNode.Attributes["category"].Value == "bakedgood_type"){
-                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.blue; 
+                    else if(xmlNode.Attributes["category"].Value == "recipe"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(174, 110, 239, 255); 
                         
                     }
-                    else if(xmlNode.Attributes["category"].Value == "type"){
-                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.green; 
+                    else if(xmlNode.Attributes["category"].Value == "category"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(215, 187, 247, 255); 
                        
                     }
                     

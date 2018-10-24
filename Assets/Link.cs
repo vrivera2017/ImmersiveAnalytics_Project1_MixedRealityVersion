@@ -9,30 +9,24 @@ public class Link : MonoBehaviour {
     public string id;
     public Node source;
     public Node target;
-
-    //public GameObject source; 
-    //public GameObject target; 
     public string sourceId;
     public string targetId;
     public string status;
     public bool loaded = false;
-    public float distance; 
     public GameObject linkPrefab; 
 
     public LineRenderer lineRenderer;
 
 
-	// Use this for initialization
     
 	void Start () {
         lineRenderer = gameObject.AddComponent<LineRenderer>();
-        //lineRenderer = linkPrefab.GetComponent<LineRenderer>(); 
-        Debug.Log("lineRenderer: " + lineRenderer); 
+        
 
         //draw line
-        //lineRenderer.material = new Material(Shader.Find("Self-Illumin/Diffuse"));
-        lineRenderer.material.color = Color.white;  
-        lineRenderer.SetWidth(0.05f, 0.05f);
+        lineRenderer.material = new Material(Shader.Find("Self-Illumin/Diffuse"));
+        lineRenderer.material.color = new Color32(255, 255, 255, 80);  
+        lineRenderer.SetWidth(0.02f, 0.02f);
         //lineRenderer.SetVertexCount(2); //how would I change this for a bipartite graph?
         //lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
         //lineRenderer.SetPosition(1, new Vector3(1, 0, 0));
