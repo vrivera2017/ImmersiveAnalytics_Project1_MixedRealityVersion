@@ -44,17 +44,24 @@ public class frequencyCount : MonoBehaviour {
 
 				if(xmlNode.Name == "node")
 				{
+
+					if(xmlNode.Attributes["category"].Value == "ingredient")
+					{
+
 					Debug.Log("I found a node!"); 
                     float x = float.Parse(xmlNode.Attributes["x"].Value);
                     float y = float.Parse(xmlNode.Attributes["y"].Value);
                     float z = float.Parse(xmlNode.Attributes["z"].Value);
+                    float s = float.Parse(xmlNode.Attributes["frequency"].Value); 
                     Point nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity) as Point;
+                    nodeObject.GetComponent<Transform>().localScale += new Vector3(s,s,s); 
 					nodeObject.GetComponent<MeshRenderer>().materials[0].color = Color.red; 
 					
 					nodeObject.id = xmlNode.Attributes["id"].Value;
 					nodeObject.name = xmlNode.Attributes["id"].Value;
-					nodeTable.Add(nodeObject.id, nodeObject);
-					nodeCount++; 
+					//nodeTable.Add(nodeObject.id, nodeObject);
+					//nodeCount++; 
+				}
 
 				}
 			}
