@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Bipartite.unity
+- path: Assets/Scenes/Frequency.unity
   isLoaded: 1
   isActive: 1
