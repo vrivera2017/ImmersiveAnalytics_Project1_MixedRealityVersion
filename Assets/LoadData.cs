@@ -28,6 +28,10 @@ public class LoadData : MonoBehaviour
     //private GUIText nodeCountText;
     //private GUIText linkCountText;
     //public LineRenderer lineRenderer; 
+    public float x;
+    public float y;
+    public float z;
+    public Vector3 pos; 
 
 
     // Method for mapping links to nodes
@@ -54,6 +58,13 @@ public class LoadData : MonoBehaviour
           
           StartCoroutine(LoadLayout()); 
 
+    }
+
+    public void getPos(){
+        x = UnityEngine.Random.Range(-5f, 5f);
+        y = UnityEngine.Random.Range(-5f, 5f);
+        z = UnityEngine.Random.Range(-5f, 5f);
+        pos = new Vector3(x, y, z); 
     }
     
     public IEnumerator LoadLayout() 
@@ -92,17 +103,41 @@ public class LoadData : MonoBehaviour
                 // Create nodes
                 if(xmlNode.Name == "node")
                 {
+                    getPos();
                     Debug.Log("found a node"); 
-                    float x = float.Parse(xmlNode.Attributes["x"].Value);
-                    Debug.Log("x: " + x);
-                    float y = float.Parse(xmlNode.Attributes["y"].Value);
-                    Debug.Log("y: " + y);
-                    float z = float.Parse(xmlNode.Attributes["z"].Value);
-                    Debug.Log("z: " + z); 
-                    Node nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity) as Node;
+                    float scale = (float)(0.25);
+                    if (!(Physics.CheckSphere(pos, scale))){
+                        Node nodeObject = Instantiate(DataPoint, pos, Quaternion.identity) as Node;
+                        nodeObject.nodeText.text = xmlNode.Attributes["name"].Value;
+
+                        if(xmlNode.Attributes["category"].Value == "ingredient"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(66, 232, 244, 255);
+                        }
+                        else if(xmlNode.Attributes["category"].Value == "recipe"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(174, 110, 239, 255); 
+                        }
+                        else if(xmlNode.Attributes["category"].Value == "category"){
+                        nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(244, 132, 165, 255); 
+                        }
+                        nodeObject.id = xmlNode.Attributes["id"].Value; 
+                        nodeObject.name = xmlNode.Attributes["id"].Value; 
+                        nodetable.Add(nodeObject.id, nodeObject); 
+                        nodeCount ++; 
+
+                    }
+                    else{
+                        LoadLayout(); 
+                    }
+                    //float x = float.Parse(xmlNode.Attributes["x"].Value);
+                    //Debug.Log("x: " + x);
+                    //float y = float.Parse(xmlNode.Attributes["y"].Value);
+                    //Debug.Log("y: " + y);
+                    //float z = float.Parse(xmlNode.Attributes["z"].Value);
+                    //Debug.Log("z: " + z); 
+                    //Node nodeObject = Instantiate(DataPoint, new Vector3(x, y, z), Quaternion.identity) as Node;
                     //NodeText.GetComponent<TextMesh>().text = xmlNode.Attributes["name"].Value; 
                     //nodeText.text = xmlNode.Attributes["name"].Value; 
-                    nodeObject.nodeText.text = xmlNode.Attributes["name"].Value;
+                    //nodeObject.nodeText.text = xmlNode.Attributes["name"].Value;
                     
                     //nodeObject.colorOfNode = NodeColor2; 
 
@@ -112,7 +147,7 @@ public class LoadData : MonoBehaviour
                    
                    
                     //THIS WAS FOR CHANGING COLOR OF NODE
-                    
+                    /*
                     if(xmlNode.Attributes["category"].Value == "ingredient"){
                         nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(66, 232, 244, 255);
                         
@@ -125,6 +160,7 @@ public class LoadData : MonoBehaviour
                         nodeObject.GetComponent<MeshRenderer>().materials[0].color = new Color32(215, 187, 247, 255); 
                        
                     }
+                    */
                     
 
                     //WORKING: nodeObject.colorOfNode.color = new Color32(255, 0, 0, 255); 
@@ -139,11 +175,11 @@ public class LoadData : MonoBehaviour
 
                     
 
-                    nodeObject.id = xmlNode.Attributes["id"].Value; 
-                    nodeObject.name = xmlNode.Attributes["id"].Value; 
-                    nodetable.Add(nodeObject.id, nodeObject); 
+                    //nodeObject.id = xmlNode.Attributes["id"].Value; 
+                    //nodeObject.name = xmlNode.Attributes["id"].Value; 
+                    //nodetable.Add(nodeObject.id, nodeObject); 
                     //statusText.text = "Loading Node" + nodeObject.id;
-                    nodeCount++;
+                    //nodeCount++;
                     //nodeCountText.text = "Nodes: " + nodeCount; 
                 }
 

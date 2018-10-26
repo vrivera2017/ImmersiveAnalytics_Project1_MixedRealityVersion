@@ -25,8 +25,8 @@ public class Link : MonoBehaviour {
 
         //draw line
         lineRenderer.material = new Material(Shader.Find("Self-Illumin/Diffuse"));
-        lineRenderer.material.color = new Color32(255, 255, 255, 80);  
-        lineRenderer.SetWidth(0.02f, 0.02f);
+        lineRenderer.material.color = new Color32(193, 180, 185, 50);  
+        lineRenderer.SetWidth(0.01f, 0.01f);
         //lineRenderer.SetVertexCount(2); //how would I change this for a bipartite graph?
         //lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
         //lineRenderer.SetPosition(1, new Vector3(1, 0, 0));

@@ -34,9 +34,9 @@ public class frequencyCount : MonoBehaviour {
 	// function to check if a random location is valid
 	
 	public void getPos(){
-		x = UnityEngine.Random.Range(-5f, 5f);
-		y = UnityEngine.Random.Range(-5f, 5f);
-		z = UnityEngine.Random.Range(-5f, 5f);
+		x = UnityEngine.Random.Range(-3f, 3f);
+		y = UnityEngine.Random.Range(-3f, 3f);
+		z = UnityEngine.Random.Range(-3f, 3f);
 		pos = new Vector3(x, y, z); 
 	}
 	
@@ -73,7 +73,7 @@ public class frequencyCount : MonoBehaviour {
                     //float y = UnityEngine.Random.Range(-5f, 5f);
                     //float z = UnityEngine.Random.Range(-5f, 5f); 
                     float s = float.Parse(xmlNode.Attributes["frequency"].Value); 
-                    float scale = (float)(s*0.25);
+                    float scale = (float)(s*0.15);
                     Debug.Log("Scale: " + scale); 
                     if (!(Physics.CheckSphere(pos, scale))){
                     	Debug.Log("collision detected"); 
