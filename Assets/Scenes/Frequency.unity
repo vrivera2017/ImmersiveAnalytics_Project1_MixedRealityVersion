@@ -220,6 +220,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DataPoint: {fileID: 114857317887740812, guid: b5cc689797a894f199652cd26e81b439,
     type: 2}
+  x: 0
+  y: 0
+  z: 0
+  s: 0
+  pos: {x: 0, y: 0, z: 0}
 --- !u!1001 &1529945465
 Prefab:
   m_ObjectHideFlags: 0
@@ -349,7 +354,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532159241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -4.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
