@@ -248,13 +248,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87d9e921c4c244b949bfa2fe02825816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeColor: {fileID: 0}
-  NodeColor2: {fileID: 0}
-  NodeColor3: {fileID: 0}
   DataPoint: {fileID: 114774964765412726, guid: 08c9d170559381a46bed10b91b6d82ba,
     type: 2}
   linkPrefab: {fileID: 114428470161063300, guid: 82112e24abae97144ac73f096fa65d03,
     type: 2}
+  x: 0
+  y: 0
+  z: 0
+  pos: {x: 0, y: 0, z: 0}
 --- !u!4 &267037785
 Transform:
   m_ObjectHideFlags: 0
@@ -420,7 +421,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -4.54}
+  m_LocalPosition: {x: 0, y: 1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

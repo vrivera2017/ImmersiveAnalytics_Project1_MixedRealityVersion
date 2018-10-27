@@ -11,7 +11,7 @@ public class Node : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //node text always facing camera 
-        //nodeText.transform.LookAt(Camera.main.transform); 
+        nodeText.transform.LookAt(Camera.main.transform); 
 		
 	}
 }

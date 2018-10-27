@@ -55,7 +55,7 @@ Transform:
   m_GameObject: {fileID: 1288334252896622}
   m_LocalRotation: {x: -0.050035145, y: 0, z: 0, w: 0.99874747}
   m_LocalPosition: {x: -0.35, y: -0.5, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: -0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 4299772447582966}
   m_RootOrder: 0
@@ -183,7 +183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 
   nodeText: {fileID: 102391204619811906}
-  colorOfNode: {fileID: 2100000, guid: 4ca3149123d184d9db3b9b05c59fd2e1, type: 2}
 --- !u!135 &135089288083433226
 SphereCollider:
   m_ObjectHideFlags: 1

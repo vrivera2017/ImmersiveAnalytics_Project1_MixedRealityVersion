@@ -20,20 +20,20 @@
 <node id= "nutmeg_node" x = "-2" y = "0" z = "0" name = "nutmeg" directed = "false" category = "ingredient" frequency = "5" />
 <node id= "cocoapowder_node" x = "-2" y = "0" z = "0" name = "cocoa powder" directed = "false" category = "ingredient" frequency = "1" />
 <node id= "butter_node" x = "-2" y = "0" z = "0" name = "butter" directed = "false" category = "ingredient" frequency = "12" />
-<node id= "coconutoil_node" x = "-2" y = "0" z = "0" name = "coconut oil" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "salt_node" x = "-2" y = "0" z = "0" name = "salt" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "molasses_node" x = "-2" y = "0" z = "0" name = "molasses" directed = "false" category = "ingredient" frequency = "2" />
+<node id= "coconutoil_node" x = "-2" y = "0" z = "0" name = "coconut oil" directed = "false" category = "ingredient" frequency = "4" />
+<node id= "salt_node" x = "-2" y = "0" z = "0" name = "salt" directed = "false" category = "ingredient" frequency = "7" />
+<node id= "molasses_node" x = "-2" y = "0" z = "0" name = "molasses" directed = "false" category = "ingredient" frequency = "1" />
 <node id= "apples_node" x = "-2" y = "0" z = "0" name = "apples" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "pecans_node" x = "-2" y = "0" z = "0" name = "pecans" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "lemons_node" x = "-2" y = "0" z = "0" name = "lemons" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "cranberries_node" x = "-2" y = "0" z = "0" name = "cranberries" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "oatmeal_node" x = "-2" y = "0" z = "0" name = "oatmeal" directed = "false" category = "ingredient" frequency = "2" />
+<node id= "pecans_node" x = "-2" y = "0" z = "0" name = "pecans" directed = "false" category = "ingredient" frequency = "3" />
+<node id= "lemons_node" x = "-2" y = "0" z = "0" name = "lemons" directed = "false" category = "ingredient" frequency = "3" />
+<node id= "cranberries_node" x = "-2" y = "0" z = "0" name = "cranberries" directed = "false" category = "ingredient" frequency = "1" />
+<node id= "oatmeal_node" x = "-2" y = "0" z = "0" name = "oatmeal" directed = "false" category = "ingredient" frequency = "1" />
 <node id= "peanutbutter_node" x = "-2" y = "0" z = "0" name = "peanut butter" directed = "false" category = "ingredient" frequency = "2" />
 <node id= "blueberries_node" x = "-2" y = "0" z = "0" name = "blueberries" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "peaches_node" x = "-2" y = "0" z = "0" name = "peaches" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "zucchini_node" x = "-2" y = "0" z = "0" name = "zucchini" directed = "false" category = "ingredient" frequency = "2" />
+<node id= "peaches_node" x = "-2" y = "0" z = "0" name = "peaches" directed = "false" category = "ingredient" frequency = "1" />
+<node id= "zucchini_node" x = "-2" y = "0" z = "0" name = "zucchini" directed = "false" category = "ingredient" frequency = "1" />
 
-
+<!-- Ingredients -->
 <node id = "cchipcookie_node" x = "2" y = "2" z = "0" name = "chocolate chip cookies" directed = "false" category = "recipe" />
 <node id = "gingercookie_node" x = "3" y = "0" z = "0" name = "ginger cookies" directed = "false" category = "recipe" />
 <node id = "pumpkinbread_node" x = "" y = "" z = "" name = "pumpkin bread" directed = "false" category = "recipe" />
@@ -51,33 +51,6 @@
 <node id = "blueberryscones_node" x = "" y ="" z = "" name = "blueberry scones" directed = "false" category = "recipe" />
 <node id = "zucchinibread_node" x = "" y = "" z = "" name = "zucchini bread" directed = "false" category = "recipe" />
  
-
-<!--
-<node id = "cookies_node" x = "2" y = "2" z = "0" name = "cookies" directed = "false" category = "category" />
-<node id = "bars_scones" x = "0" y = "2" z = "0" name = "bars and scones" directed = "false" category = "category" />
-<node id = "pies_node" x = "-2" y = "2" z = "0" name = "pies" directed = "false" category = "category" />
-<node id = "loaves_node" x = "-4" y = "2" z = "0" name = "loaves" directed = "false" category = "category" />
--->
-
-<!-- Connects recipes to categories -->
-<!--
-<edge id = "link_1" source = "cchipcookie_node" target = "cookies_node" />
-<edge id = "link_2" source = "gingercookie_node" target = "cookies_node" />
-<edge id = "link_3" source = "appleOat_node" target = "cookies_node" /> 
-<edge id = "link_4" source = "peanutBCookie_node" target = "cookies_node" />
-<edge id = "link 5" source = "pumpkinbread_node" target = "loaves_node" />
-<edge id = "link_6" source = "bananabread_node" target = "loaves_node" />
-<edge id = "link_7" source = "zucchinibread_node" target = "loaves_node" />
-<edge id = "link_8" source = "applepie_node" target = "pies_node" />
-<edge id = "link_9" source = "peachpie_node" target = "pies_node" />
-<edge id = "link_10" source = "pecanpie_node" target = "pies_node" />
-<edge id = "link_11" source = "pumpkinpie_node" target = "pies_node" />
-<edge id = "link_12" source = "blueberrypie_node" target = "pies_node" />
-<edge id = "link_13" source = "brownie_node" target = "bars_scones" />
-<edge id = "link_14" source = "lemonbars_node" target = "bars_scones" />
-<edge id = "link_15" source = "lemonCranScone_node" target = "bars_scones" />
-<edge id = "link_16" source = "blueberryscones_node" target = "bars_scones" />
--->
 
 <!-- Connects ingredients to recipes -->
 <edge id = "link_17" source = "flour_node" target = "cchipcookie_node" />
@@ -199,14 +172,44 @@
 <edge id = "link_116" source = "butter_node" target = "blueberryscones_node" />
 <edge id = "link_117" source = "butter_node" target = "peanutBCookie_node" />
 
+<edge id = "link_118" source = "coconutoil_node" target = "pumpkinbread_node" />
+<edge id = "link_119" source = "coconutoil_node" target = "bananabread_node" />
+<edge id = "link_120" source = "coconutoil_node" target = "zucchinibread_node" />
+<edge id = "link_121" source = "coconutoil_node" target = "brownie_node" />
 
+<edge id = "link_122" source = "salt_node" target = "cchipcookie_node" />
+<edge id = "link_123" source = "salt_node" target = "gingercookie_node" />
+<edge id = "link_124" source = "salt_node" target = "appleOat_node" />
+<edge id = "link_125" source = "salt_node" target = "brownie_node" />
+<edge id = "link_126" source = "salt_node" target = "lemonCranScone_node" />
+<edge id = "link_127" source = "salt_node" target = "blueberryscones_node" />
+<edge id = "link_128" source = "salt_node" target = "peanutBCookie_node" />
 
+<edge id = "link_129" source = "molasses_node" target = "gingercookie_node" />
 
+<edge id = "link_130" source = "apples_node" target = "appleOat_node" />
+<edge id = "link_131" source = "apples_node" target = "applepie_node" />
 
+<edge id = "link_132" source = "pecans_node" target = "bananabread_node" />
+<edge id = "link_133" source = "pecans_node" target = "zucchinibread_node" />
+<edge id = "link_134" source = "pecans_node" target = "pecanpie_node" />
 
+<edge id = "link_135" source = "lemons_node" target = "applepie_node" />
+<edge id = "link_136" source = "lemons_node" target = "lemonbars_node" />
+<edge id = "link_137" source = "lemons_node" target = "lemonCranScone_node" />
 
+<edge id = "link_138" source = "cranberries_node" target = "lemonCranScone_node" />
 
+<edge id = "link_139" source = "oatmeal_node" target = "appleOat_node" />
 
+<edge id = "link_140" source = "peanutbutter_node" target = "cchipcookie_node" />
+<edge id = "link_141" source = "peanutbutter_node" target = "peanutBCookie_node" />
 
+<edge id = "link_142" source = "blueberries_node" target = "blueberrypie_node" />
+<edge id = "link_143" source = "blueberries_node" target = "blueberryscones_node" />
+
+<edge id = "link_144" source = "peaches_node" target = "peachpie_node" />
+
+<edge id = "link_145" source = "zucchini_node" target = "zucchinibread_node" />
 </graph>
 </graphml>
