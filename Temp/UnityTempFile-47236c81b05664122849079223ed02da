@@ -152,9 +152,9 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
-'Assets/LoadData.cs'
 'Assets/Scripts/frequencyCount.cs'
 'Assets/Scripts/Link.cs'
+'Assets/Scripts/LoadData.cs'
 'Assets/Scripts/Node.cs'
 'Assets/Scripts/Point.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'

@@ -2,54 +2,55 @@
 <graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/1.0/ygraphml.xsd" xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/1.0/xaml">
 <graph id="G" edgedefault="undirected">
 
-<node id= "flour_node" x = "-2" y = "0" z = "0" name = "flour" directed = "false" category = "ingredient" frequency = "16" />
-<node id = "egg_node" x = "-1" y = "1" z = "0" name = "eggs" directed = "false" category = "ingredient" frequency = "12"/>
-<node id= "coconutsugar_node" x = "-2" y = "0" z = "0" name = "coconut sugar" directed = "false" category = "ingredient" frequency = "7" />
-<node id= "brownsugar_node" x = "-2" y = "0" z = "0" name = "brown sugar" directed = "false" category = "ingredient" frequency = "3" />
-<node id= "whitesugar_node" x = "-2" y = "0" z = "0" name = "white sugar" directed = "false" category = "ingredient" frequency = "10" />
-<node id= "vanillaE_node" x = "-2" y = "0" z = "0" name = "vanilla extract" directed = "false" category = "ingredient" frequency = "5" />
-<node id= "bakingsoda_node" x = "-2" y = "0" z = "0" name = "baking soda" directed = "false" category = "ingredient" frequency = "7" />
-<node id= "bakingpowder_node" x = "-2" y = "0" z = "0" name = "baking powder" directed = "false" category = "ingredient" frequency = "5" />
-<node id= "chocochips_node" x = "-2" y = "0" z = "0" name = "chocolate chips" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "cannedpumpkin_node" x = "-2" y = "0" z = "0" name = "canned pumpkin" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "bananas_node" x = "-2" y = "0" z = "0" name = "bananas" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "walnuts_node" x = "-2" y = "0" z = "0" name = "walnuts" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "cinnamon_node" x = "-2" y = "0" z = "0" name = "cinnamon" directed = "false" category = "ingredient" frequency = "9" />
-<node id= "groundcloves_node" x = "-2" y = "0" z = "0" name = "ground cloves" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "groundginger_node" x = "-2" y = "0" z = "0" name = "ground ginger" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "nutmeg_node" x = "-2" y = "0" z = "0" name = "nutmeg" directed = "false" category = "ingredient" frequency = "5" />
-<node id= "cocoapowder_node" x = "-2" y = "0" z = "0" name = "cocoa powder" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "butter_node" x = "-2" y = "0" z = "0" name = "butter" directed = "false" category = "ingredient" frequency = "12" />
-<node id= "coconutoil_node" x = "-2" y = "0" z = "0" name = "coconut oil" directed = "false" category = "ingredient" frequency = "4" />
-<node id= "salt_node" x = "-2" y = "0" z = "0" name = "salt" directed = "false" category = "ingredient" frequency = "7" />
-<node id= "molasses_node" x = "-2" y = "0" z = "0" name = "molasses" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "apples_node" x = "-2" y = "0" z = "0" name = "apples" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "pecans_node" x = "-2" y = "0" z = "0" name = "pecans" directed = "false" category = "ingredient" frequency = "3" />
-<node id= "lemons_node" x = "-2" y = "0" z = "0" name = "lemons" directed = "false" category = "ingredient" frequency = "3" />
-<node id= "cranberries_node" x = "-2" y = "0" z = "0" name = "cranberries" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "oatmeal_node" x = "-2" y = "0" z = "0" name = "oatmeal" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "peanutbutter_node" x = "-2" y = "0" z = "0" name = "peanut butter" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "blueberries_node" x = "-2" y = "0" z = "0" name = "blueberries" directed = "false" category = "ingredient" frequency = "2" />
-<node id= "peaches_node" x = "-2" y = "0" z = "0" name = "peaches" directed = "false" category = "ingredient" frequency = "1" />
-<node id= "zucchini_node" x = "-2" y = "0" z = "0" name = "zucchini" directed = "false" category = "ingredient" frequency = "1" />
-
 <!-- Ingredients -->
-<node id = "cchipcookie_node" x = "2" y = "2" z = "0" name = "chocolate chip cookies" directed = "false" category = "recipe" />
-<node id = "gingercookie_node" x = "3" y = "0" z = "0" name = "ginger cookies" directed = "false" category = "recipe" />
-<node id = "pumpkinbread_node" x = "" y = "" z = "" name = "pumpkin bread" directed = "false" category = "recipe" />
-<node id = "bananabread_node" x = "" y = "" z = "" name = "banana bread" directed = "false" category = "recipe" />
-<node id = "applepie_node" x = "" y = "" z = "" name = "apple pie" directed = "false" category = "recipe" />
-<node id = "peachpie_node" x = "" y = "" z = "" name = "peach pie" directed = "false" category = "recipe" />
-<node id = "pumpkinpie_node" x = "" y = "" z = "" name = "pumpkin pie" directed = "false" category = "recipe" />
-<node id = "pecanpie_node" x = "" y = "" z = "" name = "pecan pie" directed = "false" category = "recipe" />
-<node id = "brownie_node" x = "" y = "" z = "" name = "brownies" directed = "false" category = "recipe" />
-<node id = "lemonbars_node" x = "" y = "" z = "" name = "lemon bars" directed = "false" category = "recipe" />
-<node id = "appleOat_node" x = "" y = "" z = "" name = "apple oatmeal cookies" directed = "false" category = "recipe" />
-<node id = "lemonCranScone_node" x = "" y = "" z = "" name = "lemon cranberry scones" directed = "false" category = "recipe" />
-<node id = "peanutBCookie_node" x = "" y = "" z = "" name = "peanut butter cookies" directed = "false" category = "recipe" />
-<node id = "blueberrypie_node" x = "" y = "" z = "" name = "blueberry pie" directed = "false" category = "recipe" />
-<node id = "blueberryscones_node" x = "" y ="" z = "" name = "blueberry scones" directed = "false" category = "recipe" />
-<node id = "zucchinibread_node" x = "" y = "" z = "" name = "zucchini bread" directed = "false" category = "recipe" />
+<node id= "flour_node" name = "flour" category = "ingredient" frequency = "16" />
+<node id = "egg_node" name = "eggs" category = "ingredient" frequency = "12"/>
+<node id= "coconutsugar_node" name = "coconut sugar" category = "ingredient" frequency = "7" />
+<node id= "brownsugar_node" name = "brown sugar" category = "ingredient" frequency = "3" />
+<node id= "whitesugar_node" name = "white sugar" category = "ingredient" frequency = "10" />
+<node id= "vanillaE_node" name = "vanilla extract" category = "ingredient" frequency = "5" />
+<node id= "bakingsoda_node" name = "baking soda" category = "ingredient" frequency = "7" />
+<node id= "bakingpowder_node" name = "baking powder" category = "ingredient" frequency = "5" />
+<node id= "chocochips_node" name = "chocolate chips" category = "ingredient" frequency = "2" />
+<node id= "cannedpumpkin_node" name = "canned pumpkin" category = "ingredient" frequency = "2" />
+<node id= "bananas_node" name = "bananas" category = "ingredient" frequency = "1" />
+<node id= "walnuts_node" name = "walnuts" category = "ingredient" frequency = "2" />
+<node id= "cinnamon_node" name = "cinnamon" category = "ingredient" frequency = "9" />
+<node id= "groundcloves_node" name = "ground cloves" category = "ingredient" frequency = "1" />
+<node id= "groundginger_node" name = "ground ginger" category = "ingredient" frequency = "1" />
+<node id= "nutmeg_node" name = "nutmeg" category = "ingredient" frequency = "5" />
+<node id= "cocoapowder_node" name = "cocoa powder" category = "ingredient" frequency = "1" />
+<node id= "butter_node" name = "butter" category = "ingredient" frequency = "12" />
+<node id= "coconutoil_node" name = "coconut oil" category = "ingredient" frequency = "4" />
+<node id= "salt_node" name = "salt" category = "ingredient" frequency = "7" />
+<node id= "molasses_node" name = "molasses" category = "ingredient" frequency = "1" />
+<node id= "apples_node" name = "apples" category = "ingredient" frequency = "2" />
+<node id= "pecans_node" name = "pecans" category = "ingredient" frequency = "3" />
+<node id= "lemons_node" name = "lemons" category = "ingredient" frequency = "3" />
+<node id= "cranberries_node" name = "cranberries" category = "ingredient" frequency = "1" />
+<node id= "oatmeal_node" name = "oatmeal" category = "ingredient" frequency = "1" />
+<node id= "peanutbutter_node" name = "peanut butter" category = "ingredient" frequency = "2" />
+<node id= "blueberries_node" name = "blueberries" category = "ingredient" frequency = "2" />
+<node id= "peaches_node" name = "peaches" category = "ingredient" frequency = "1" />
+<node id= "zucchini_node" name = "zucchini" category = "ingredient" frequency = "1" />
+
+<!-- Recipes -->
+<node id = "cchipcookie_node" name = "chocolate chip cookies" category = "recipe" />
+<node id = "gingercookie_node" name = "ginger cookies" category = "recipe" />
+<node id = "pumpkinbread_node" name = "pumpkin bread" category = "recipe" />
+<node id = "bananabread_node" name = "banana bread" category = "recipe" />
+<node id = "applepie_node" name = "apple pie" category = "recipe" />
+<node id = "peachpie_node" name = "peach pie" category = "recipe" />
+<node id = "pumpkinpie_node" name = "pumpkin pie" category = "recipe" />
+<node id = "pecanpie_node" name = "pecan pie" category = "recipe" />
+<node id = "brownie_node" name = "brownies" category = "recipe" />
+<node id = "lemonbars_node" name = "lemon bars" category = "recipe" />
+<node id = "appleOat_node" name = "apple oatmeal cookies" category = "recipe" />
+<node id = "lemonCranScone_node" name = "lemon cranberry scones" category = "recipe" />
+<node id = "peanutBCookie_node" name = "peanut butter cookies" category = "recipe" />
+<node id = "blueberrypie_node" name = "blueberry pie" category = "recipe" />
+<node id = "blueberryscones_node" name = "blueberry scones" category = "recipe" />
+<node id = "zucchinibread_node" name = "zucchini bread" category = "recipe" />
  
 
 <!-- Connects ingredients to recipes -->
